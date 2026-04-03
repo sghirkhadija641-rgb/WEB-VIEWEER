@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fragments Viewer + Items Finder</title>
+  <title>BIM Viewer</title>
 
   <style>
-    html, body {
+    body {
       margin: 0;
       overflow: hidden;
+      font-family: Arial;
     }
 
     #container {
@@ -17,19 +18,26 @@
 
     .options-menu {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 20px;
+      left: 20px;
       z-index: 10;
     }
   </style>
 </head>
 
 <body>
+
   <div id="container"></div>
 
-  <!-- Upload your own fragments -->
-  <input type="file" id="fragInput" multiple style="position:absolute; top:10px; left:10px; z-index:10;" />
+  <input
+    type="file"
+    id="fragInput"
+    multiple
+    accept=".frag"
+    style="position:absolute; top:20px; right:20px; z-index:10;"
+  />
 
   <script type="module" src="/main.ts"></script>
+
 </body>
 </html>
